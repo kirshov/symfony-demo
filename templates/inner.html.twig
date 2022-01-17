@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="content__wrapper">
+        {% if h1 is defined %}
+            <h1>{{ h1 }}</h1>
+        {% endif %}
+
+        {% include '_flashes.html.twig' %}
+
+        <div class="content__inner">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}

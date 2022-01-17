@@ -1,0 +1,27 @@
+{% trans_default_domain "users" %}
+{% extends 'inner.html.twig' %}
+{% form_theme form 'includes/fields.html.twig' %}
+
+{% block title %}Reset password{% endblock %}
+{% set h1 = 'Reset password' %}
+
+{% block body %}
+    <div class="content__form">
+        <div class="row">
+            <div class="col-6">
+                {{ form_start(form) }}
+
+                <div class="form-group">
+                    {{ form_label(form.email) }}
+                    <div class="input-group">
+                        {{ form_widget(form.email, {'attr': {'placeholder': 'E-mail'}}) }}
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-success">{% trans %}Reset password{% endtrans %}</button>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

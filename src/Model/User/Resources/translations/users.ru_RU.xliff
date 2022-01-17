@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="first_name">
+                <source>First Name</source>
+                <target>Имя</target>
+            </trans-unit>
+            <trans-unit id="last_name">
+                <source>Last Name</source>
+                <target>Фамилия</target>
+            </trans-unit>
+            <trans-unit id="email">
+                <source>Email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="password">
+                <source>Password</source>
+                <target>Пароль</target>
+            </trans-unit>
+            <trans-unit id="repeat_password">
+                <source>Repeat Password</source>
+                <target>Повторите пароль</target>
+            </trans-unit>
+            <trans-unit id="repeat_password_error">
+                <source>Password confirmation does not match</source>
+                <target>Пароль и подтверждение не совпадают</target>
+            </trans-unit>
+            <trans-unit id="create_account">
+                <source>Create Account</source>
+                <target>Зарегистрироваться</target>
+            </trans-unit>
+            <trans-unit id="user_already_exist">
+                <source>User already exist</source>
+                <target>Пользователь с таким адресом уже зарегистрирован</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

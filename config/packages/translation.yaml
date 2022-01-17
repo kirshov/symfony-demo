@@ -1,0 +1,9 @@
+framework:
+    default_locale: ru_RU
+    translator:
+        default_path: '%kernel.project_dir%/translations'
+        paths: [
+            '%kernel.project_dir%/src/Model/User/Resources/translations'
+        ]
+        fallbacks:
+            - ru_RU

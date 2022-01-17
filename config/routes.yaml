@@ -1,0 +1,31 @@
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+#profile
+app_profile:
+    path: /profile/
+    controller: App\Controller\ProfileController::index
+
+#auth
+app_signup:
+    path: /signup/
+    controller: App\Controller\Auth\SignUpController::request
+app_activate_account:
+    path: /activate/
+    controller: App\Controller\Auth\SignUpController::activate
+app_login:
+    path: /login/
+    controller: App\Controller\Auth\AuthController::login
+app_password_reset:
+    path: /reset_password/
+    controller: App\Controller\Auth\ResetController::reset
+app_password_forgot:
+    path: /forgot_password/
+    controller: App\Controller\Auth\ResetController::request
+app_password_change:
+    path: /change_password/
+    controller: App\Controller\ProfileController::changePassword
+app_logout:
+    path: /logout/
+    controller: App\Controller\Auth\AuthController::logout
